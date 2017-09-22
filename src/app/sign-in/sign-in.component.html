@@ -1,0 +1,20 @@
+<md-card class="example-card-1">Real-Time Parking Booking System
+  <div class="box"><a routerLink="/signin">SignIn</a>
+    <a routerLink="/signup">SignUp</a>
+  </div>
+</md-card>
+
+<md-card class="example-card"><h3>Login</h3>
+
+      
+              <md-form-field >
+                <input mdInput  placeholder="Email" [(ngModel)]="email">
+              </md-form-field>
+     
+                <md-form-field >
+                  <input type="password" mdInput   placeholder="Password"  [(ngModel)]="password">
+                </md-form-field>
+                <button class="btn-1" (click)="login()" [disabled]="!email || !password" md-button>SignIn</button>
+                <h6>Not registered yet registered? <a class="color" routerLink="/signup">register</a></h6>
+
+</md-card>

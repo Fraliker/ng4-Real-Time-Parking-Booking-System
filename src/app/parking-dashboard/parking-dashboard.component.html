@@ -1,0 +1,23 @@
+<md-card class="example-card">Parking Dashboard
+<div class="container">
+<!-- <a routerLink="/parkingdashboard">ViewProfile</a> -->
+<!-- <a routerLink = "userprofile" routerLinkActive="active">UpdateProfile</a> -->
+<a routerLink="bookparking" routerLinkActive="active">BookParking</a>
+<a routerLink="viewbooking" routerLinkActive="active">ViewBooking</a>
+<a routerLink="livechat" routerLinkActive="active">FeedBack</a>
+
+<a (click)="logout()">LogOut</a>
+</div>
+</md-card>
+<router-outlet></router-outlet>
+<!-- <md-card class="example-card-1">View Profile</md-card>
+<div class="box">
+  <form [formGroup] = "forms" (ngSubmit) = "onsubmit(forms.value)">
+      <input type="text"  name="firstname" placeholder="Firstname" formControlName="firstname">
+      <input type="text" name="lastname" placeholder="Lastname" formControlName="lastname">
+      <input type="text"  name="email" placeholder="Email" formControlName="email">
+      <input type="text"  name="address" placeholder="Address" formControlName="address">
+      <input type="text"  name="contact no" placeholder="Contact No" formControlName="contactno">
+      <button  class="btn" type="submit" md-raised-button>Update Profile</button>
+    </form>
+  </div>  -->
